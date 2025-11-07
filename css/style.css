@@ -359,12 +359,24 @@ body{
 
 .map-pill{
 	margin-top:12px;
-	display:inline-block;
+	/* usar inline-flex para centrar icono y texto verticalmente */
+	display:inline-flex;
+	align-items:center;
+	gap:8px;
 	background:var(--pill-bg);
 	padding:10px 14px;
 	border-radius:8px;
 	color:var(--brown);
 	font-size:0.95rem;
+}
+
+.map-icon, .phone-icon, .clock-icon, .allergen-icon {
+	width:18px;
+	height:18px;
+	display:inline-block;
+	object-fit:contain;
+	vertical-align:middle;
+	margin-right:8px; 
 }
 
 .allergen-info{
@@ -381,10 +393,6 @@ body{
 	max-width:820px;
 	margin-left:auto;
 	margin-right:auto;
-}
-
-.allergen-icon{
-	margin-right:8px;
 }
 
 .site-footer{
