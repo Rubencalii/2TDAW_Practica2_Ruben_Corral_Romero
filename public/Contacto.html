@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horno San Miguel</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="https://img.icons8.com/dotty/80/barley.png" type="image/png" />
 </head>
 <body>
         <!-- Header -->
@@ -26,6 +27,58 @@
                 </nav>
             </div>
         </header>
+        <main class="contact-page">
+            <section class="container contact-intro">
+                <h1 class="section-title">Contacto</h1>
+            </section>
+
+            <section class="container contact-grid">
+                <!-- Formulario -->
+                <div class="contact-card contact-form-card">
+                    <h3 class="card-title">Envíanos un mensaje</h3>
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" placeholder="Tu nombre">
+
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="tu@email.com">
+
+                        <label for="phone">Teléfono</label>
+                        <input id="phone" name="phone" type="tel" placeholder="XXX XXX XXX">
+
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+
+                        <button class="btn btn-submit" type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de contacto y mapa -->
+                <div class="contact-side">
+                    <div class="contact-card info-card">
+                        <h3 class="card-title">Información de contacto</h3>
+                        <ul class="info-list">
+                            <li>
+                                <img src="../img/ubicacionn.png" alt="Ubicación">
+                                <div class="info-text"><strong>Dirección</strong><br>Pl. Mayor 8, 28000</div>
+                            </li>
+                            <li>
+                                <img src="../img/telefono-marron.png" alt="Teléfono">
+                                <div class="info-text"><strong>Teléfono</strong><br>91 XXX XX XX</div>
+                            </li>
+                            <li>
+                                <img src="../img/lupa.png" alt="Email">
+                                <div class="info-text"><strong>Email</strong><br>info@hornosanmiguel.es</div>
+                            </li>
+                            <li>
+                                <img src="../img/reloj.png" alt="Horario">
+                                <div class="info-text"><strong>Horario</strong><br>Lunes a Viernes<br>7:00 - 14:30 / 17:30 - 20:00<br>Sábado 7:30 - 14:30</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
         <!-- Footer -->
         <footer class="site-footer" role="contentinfo">
             <div class="container footer-grid">
