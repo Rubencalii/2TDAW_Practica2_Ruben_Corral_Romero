@@ -29,10 +29,136 @@
         </header>
         <!-- Contenido de la página -->
         <main>
-            <section class="hero-products" aria-label="Nuestros productos">
-                <div class="container">
-                    <h1 class="hero-products-title">Nuestros productos</h1>
-                    <p class="hero-products-desc">Descubre nuestra variedad de panes de masa madre y bollería artesanal, elaborados con ingredientes naturales y mucho cariño.</p>
+            <section class="catalogo-productos" aria-label="Catálogo de productos de panadería">
+                <div class="catalogo-container">
+                    <!-- Barra lateral de filtros -->
+                    <aside class="catalogo-filtros">
+                        <h2 class="filtros-titulo">Filtrar por</h2>
+                        <div class="filtro-bloque">
+                            <h3 class="filtro-titulo">Tamaño</h3>
+                            <ul>
+                                <li><input type="checkbox" id="grande"><label for="grande"> Grande</label></li>
+                                <li><input type="checkbox" id="mediano"><label for="mediano"> Mediano</label></li>
+                                <li><input type="checkbox" id="pequeño"><label for="pequeño"> Pequeño</label></li>
+                                <li><input type="checkbox" id="mini"><label for="mini"> Mini</label></li>
+                            </ul>
+                        </div>
+                        <div class="filtro-bloque">
+                            <h3 class="filtro-titulo">Preparación</h3>
+                            <ul>
+                                <li><input type="checkbox" id="hornear"><label for="hornear"> Para hornear</label></li>
+                                <li><input type="checkbox" id="cocido"><label for="cocido"> Cocido</label></li>
+                                <li><input type="checkbox" id="fermentar"><label for="fermentar"> Para fermentar</label></li>
+                            </ul>
+                        </div>
+                        <div class="filtro-bloque">
+                            <h3 class="filtro-titulo">Formato</h3>
+                            <ul>
+                                <li><input type="checkbox" id="barra"><label for="barra"> Barra</label></li>
+                                <li><input type="checkbox" id="bocadillo"><label for="bocadillo"> Bocadillo</label></li>
+                                <li><input type="checkbox" id="baguette"><label for="baguette"> Baguette</label></li>
+                                <li><input type="checkbox" id="hogaza"><label for="hogaza"> Hogaza</label></li>
+                            </ul>
+                        </div>
+                        <!-- Puedes añadir más filtros aquí -->
+                    </aside>
+                    <!-- Catálogo de productos -->
+                    <div class="catalogo-principal">
+                        <div class="catalogo-header">
+                            <h1 class="catalogo-titulo">Catálogo productos Panadería</h1>
+                            <div class="catalogo-ordenar">
+                                <label for="ordenar">Ordenar por:</label>
+                                <select id="ordenar">
+                                    <option value="mejor">Mejores resultados</option>
+                                    <option value="precio">Precio</option>
+                                    <option value="nombre">Nombre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalogo-grid">
+                            <!-- Tarjeta de producto ejemplo -->
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/barra de pan.png" alt="Barra de pan"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Barra de Pan</h3>
+                                    <div class="producto-detalles">500g · Masa madre</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/beguette fondo blanco sin sombra.jpg" alt="Baguette"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Baguette</h3>
+                                    <div class="producto-detalles">250g · Tradicional</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/descarga.jpeg" alt="Pan integral"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Pan Integral</h3>
+                                    <div class="producto-detalles">400g · Integral</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/descarga (1).jpeg" alt="Hogaza"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Hogaza</h3>
+                                    <div class="producto-detalles">1kg · Rústico</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/300Wx300H-211535.jpg" alt="Hogaza"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Medio Bocadillo Diamante</h3>
+                                    <div class="producto-detalles">105 g · Corteza</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/300Wx300H-1200Wx1200H-107932.jpg" alt="Hogaza"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Fabiola Picos</h3>
+                                    <div class="producto-detalles">276 g · Pan Blanco</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/diamante.jpg" alt="Hogaza"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Diamante</h3>
+                                    <div class="producto-detalles">55 g · Rústico</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/hamburguesa.jpg" alt="Hogaza"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Pan Hamburguesa</h3>
+                                    <div class="producto-detalles">85 g · Rústico</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                            <div class="producto-card">
+                                <div class="producto-img"><img src="../img/productos/andalucia.jpg" alt="Hogaza"></div>
+                                <div class="producto-info">
+                                    <h3 class="producto-nombre">Viena Andalucia</h3>
+                                    <div class="producto-detalles">150 g · Rústico</div>
+                                    <button class="producto-btn">Ver producto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Paginación -->
+                        <div class="catalogo-paginacion">
+                            <button class="paginacion-btn">&lt;</button>
+                            <button class="paginacion-btn active">1</button>
+                            <button class="paginacion-btn">2</button>
+                            <button class="paginacion-btn">3</button>
+                            <button class="paginacion-btn">&gt;</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
