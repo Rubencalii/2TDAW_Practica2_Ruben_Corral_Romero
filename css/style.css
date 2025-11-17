@@ -93,7 +93,16 @@ body{
 .main-nav a.active{ 
     color:#b85d3d; font-weight:600 
 }
-/* Sección Hero */
+
+/* Capa del video  */
+.hero-overlay{
+	position:absolute;
+	inset:0;
+	background: rgba(90,43,27,0.55); 
+	z-index:1;
+}
+
+/* Contenido del Hero */
 .hero{
 	position:relative;
 	overflow:hidden;
@@ -108,13 +117,7 @@ body{
 	object-fit:cover;
 	z-index:0;
 	-o-object-fit:cover;
-}
-.hero-overlay{
-	position:absolute;
-	inset:0;
-	background: rgba(90,43,27,0.55); 
-	z-index:1;
-}
+} 
 .hero-content{
 	position:relative; 
 	z-index:2;
@@ -733,12 +736,10 @@ body{
 	padding: 8px 16px;
 	font-weight: 600;
 	cursor: pointer;
-	transition: background 0.15s;
-}
-.producto-btn:hover {
-	background: #5a2b1b;
+
 }
 
+/* Paginacion*/
 .catalogo-paginacion {
 	display: flex;
 	justify-content: center;
@@ -753,10 +754,4 @@ body{
 	padding: 6px 13px;
 	font-size: 1rem;
 	cursor: pointer;
-	transition: background 0.15s, color 0.15s;
-}
-.paginacion-btn.active, .paginacion-btn:hover {
-	background: #b85d3d;
-	color: #fff;
-	border-color: #b85d3d;
 }
