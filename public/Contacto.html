@@ -9,17 +9,17 @@
 </head>
 <body>
         <!-- Header -->
-        <header class="site-header">
-            <div class="container">
-                <a href="#" class="brand" aria-label="Horno San Miguel">
-                    <img src="../img/cebada.png" alt="Horno San Miguel" class="brand-image">
-                    <div class="brand-text">
-                        <span class="brand-title">Horno San Miguel</span>
-                        <span class="brand-sub">Desde 1982</span>
+        <header class="encabezado">
+            <div class="contenedor">
+                <a href="#" class="marca" aria-label="Horno San Miguel">
+                    <img src="../img/cebada.png" alt="Horno San Miguel" class="marca-imagen">
+                    <div class="marca-texto">
+                        <span class="marca-titulo">Horno San Miguel</span>
+                        <span class="marca-subtitulo">Desde 1982</span>
                     </div>
                 </a>
-                <nav class="main-nav" role="navigation" aria-label="Menú principal">
-                    <a href="Inicio.html" class="active">Inicio</a>
+                <nav class="nav-principal" role="navigation" aria-label="Menú principal">
+                    <a href="Inicio.html" class="activo">Inicio</a>
                     <a href="Productos.html">Productos</a>
                     <a href="Nosotros.html">Nosotros</a>
                     <a href="Contacto.html">Contacto</a>
@@ -27,52 +27,52 @@
                 </nav>
             </div>
         </header>
-        <main class="contact-page">
-            <section class="container contact-intro">
-                <h1 class="section-title">Contacto</h1>
+        <main class="pagina-contacto">
+            <section class="contenedor intro-contacto">
+                <h1 class="titulo-seccion">Contacto</h1>
             </section>
 
-            <section class="container contact-grid">
+            <section class="contenedor grid-contacto">
                 <!-- Formulario -->
-                <div class="contact-card contact-form-card">
-                    <h3 class="card-title">Envíanos un mensaje</h3>
-                    <form class="contact-form" action="#" method="post" novalidate>
-                        <label for="name">Nombre</label>
-                        <input id="name" name="name" type="text" placeholder="Tu nombre">
+                <div class="tarjeta-contacto tarjeta-formulario">
+                    <h3 class="titulo-tarjeta">Envíanos un mensaje</h3>
+                    <form class="formulario-contacto" action="#" method="post" novalidate>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre">
 
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="tu@email.com">
+                        <label for="correo">Email</label>
+                        <input id="correo" name="correo" type="email" placeholder="tu@email.com">
 
-                        <label for="phone">Teléfono</label>
-                        <input id="phone" name="phone" type="tel" placeholder="XXX XXX XXX">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="XXX XXX XXX">
 
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Enviar mensaje....."></textarea>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Enviar mensaje....."></textarea>
 
-                        <button class="btn btn-submit" type="submit">Enviar mensaje</button>
+                        <button class="boton boton-enviar" type="submit">Enviar mensaje</button>
                     </form>
                 </div>
 
                 <!-- Información de contacto y mapa -->
-                <div class="contact-side">
-                    <div class="contact-card info-card">
-                        <h3 class="card-title">Información de contacto</h3>
-                        <ul class="info-list">
+                <div class="lado-contacto">
+                    <div class="tarjeta-contacto tarjeta-info">
+                        <h3 class="titulo-tarjeta">Información de contacto</h3>
+                        <ul class="lista-info">
                             <li>
                                 <img src="../img/ubicacionn.png" alt="Ubicación">
-                                <div class="info-text"><strong>Dirección</strong><br>Pl. Mayor 8, 28000</div>
+                                <div class="texto-info"><strong>Dirección</strong><br>Pl. Mayor 8, 28000</div>
                             </li>
                             <li>
                                 <img src="../img/telefono-marron.png" alt="Teléfono">
-                                <div class="info-text"><strong>Teléfono</strong><br>91 XXX XX XX</div>
+                                <div class="texto-info"><strong>Teléfono</strong><br>91 XXX XX XX</div>
                             </li>
                             <li>
                                 <img src="../img/lupa.png" alt="Email">
-                                <div class="info-text"><strong>Email</strong><br>info@hornosanmiguel.es</div>
+                                <div class="texto-info"><strong>Email</strong><br>info@hornosanmiguel.es</div>
                             </li>
                             <li>
                                 <img src="../img/reloj.png" alt="Horario">
-                                <div class="info-text"><strong>Horario</strong><br>Lunes a Viernes<br>7:00 - 14:30 / 17:30 - 20:00<br>Sábado 7:30 - 14:30</div>
+                                <div class="texto-info"><strong>Horario</strong><br>Lunes a Viernes<br>7:00 - 14:30 / 17:30 - 20:00<br>Sábado 7:30 - 14:30</div>
                             </li>
                         </ul>
                     </div>
@@ -80,20 +80,20 @@
             </section>
         </main>
         <!-- Footer -->
-        <footer class="site-footer" role="contentinfo">
-            <div class="container footer-grid">
-                <div class="footer-brand">
-                    <div class="brand-inline">
-                        <img src="../img/cebada-blanca.png" alt="Horno San Miguel" class="footer-brand-image">
+        <footer class="pie-sitio" role="contentinfo">
+            <div class="contenedor grid-pie">
+                <div class="marca-pie">
+                    <div class="marca-linea">
+                        <img src="../img/cebada-blanca.png" alt="Horno San Miguel" class="marca-pie-imagen">
                         <div>
                             <strong>Horno San Miguel</strong>
                             <div class="small">Desde 1982</div>
                         </div>
                     </div>
-                    <p class="footer-desc">Pan de masa madre y bollería artesanal. Tradición y calidad en cada hogaza.</p>
+                    <p class="desc-pie">Pan de masa madre y bollería artesanal. Tradición y calidad en cada hogaza.</p>
                 </div>
 
-                <div class="footer-links">
+                <div class="enlaces-pie">
                     <h4>Enlaces rápidos</h4>
                     <ul>
                         <li><a href="Productos.html">Nuestros productos</a></li>
@@ -103,17 +103,17 @@
                     </ul>
                 </div>
 
-                <div class="footer-contact">
+                <div class="contacto-pie">
                     <h4>Información de contacto</h4>
-                    <ul class="contact-list">
-                        <li><img src="../img/ubicacion.png" alt="Ubicación" class="map-icon" aria-hidden="true"> Pl. Agua 8, 18290</li>
-                        <li><img src="../img/telefono.png" alt="Teléfono" class="phone-icon" aria-hidden="true"> 91 111 11 11</li>
-                        <li><img src="../img/reloj-blanco.png" alt="Horario" class="clock-icon" aria-hidden="true"> L-V: 7:00-14:30 / 17:30-20:00<br>S: 7:30-14:30</li>
+                    <ul class="lista-contacto">
+                        <li><img src="../img/ubicacion.png" alt="Ubicación" class="icono-mapa" aria-hidden="true"> Pl. Agua 8, 18290</li>
+                        <li><img src="../img/telefono.png" alt="Teléfono" class="icono-telefono" aria-hidden="true"> 91 111 11 11</li>
+                        <li><img src="../img/reloj-blanco.png" alt="Horario" class="icono-reloj" aria-hidden="true"> L-V: 7:00-14:30 / 17:30-20:00<br>S: 7:30-14:30</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="container">2025 Horno San Miguel.</div>
+            <div class="pie-inferior">
+                <div class="contenedor">2025 Horno San Miguel.</div>
             </div>
         </footer>
 </body>
