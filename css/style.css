@@ -761,3 +761,58 @@ body{
 	color:rgba(243,223,220,0.7);
 	font-size:0.85rem;
 }
+
+/* Nosotros */
+
+.nosotros{
+	padding:72px 0; 
+	color:#7a6053;
+	background-image: url("../img/Nosotros.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.12);
+	background-blend-mode: overlay;
+	min-height: 70vh; 
+}
+.nosotros-grid{
+	display:flex;
+	gap:28px;
+	justify-content:center;
+	align-items:flex-start;
+}
+.nosotros-contenido{
+	flex:1;
+	text-align:center;
+	padding:0 12px;
+}
+.nosotros-entrada{
+	flex:0 0 360px;
+	background: rgba(255,255,255,0.94);
+	border-radius:10px;
+	overflow:hidden;
+	box-shadow:0 8px 24px rgba(28,18,12,0.08);
+	text-align:left;
+	color:#5a2b1b;
+}
+.nosotros-entrada .entrada-img{
+	width:100%;
+	height:420px;
+	object-fit:cover;
+	display:block;
+}
+.nosotros-entrada .entrada-body{
+	padding:18px;
+}
+.entrada-titulo{
+	margin:0 0 8px 0;
+	font-size:1.05rem;
+	font-weight:700;
+	color:#5a2b1b;
+}
+.entrada-desc{
+	margin:0;
+	color:#7a6053;
+	line-height:1.45;
+	font-size:0.95rem;
+}
