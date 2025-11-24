@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,35 +29,79 @@
         </header>
         
         <main>
-            <!-- Las tres entradas de presentacion -->
+            <!-- Tarjetas de presentación -->
             <section class="nosotros" aria-label="Sobre Nosotros">
                 <div class="contenedor nosotros-grid">
                     <article class="nosotros-entrada" aria-labelledby="entrada-1982">
-                        <img src="../img/Horno.png" alt="Panadero con pan - 1982" class="entrada-img">
+                        <figure>
+                            <img src="../img/Horno.png" alt="Panadero con pan - 1982" class="entrada-img">
+                            <figcaption class="sr-only">Panadero con pan - 1982</figcaption>
+                        </figure>
                         <div class="entrada-body">
-                            <h3 id="entrada-1982" class="entrada-titulo">1982: Una promesa en horno</h3>
-                            <p class="entrada-desc">Elaborado en nuestras manos con las cosas tradicionales como es al horno. Empezamos así los pasos con el arte de los trigos y la bolleria, para hacerlo con corazon .</p>
+                            <h3 id="entrada-1982" class="entrada-titulo">1982: Una promesa en el horno</h3>
+                            <p class="entrada-desc">Elaborado con ingredientes tradicionales y mucho cariño. Empezamos con la pasión por el trigo y la bollería artesanal.</p>
                         </div>
                     </article>
-                    <article class="nosotros-entrada" aria-labelledby="entrada-1982">
-                        <img src="../img/Nosotros.png" alt="Panadero con pan - 1982" class="entrada-img">
+
+                    <article class="nosotros-entrada" aria-labelledby="entrada-masa">
+                        <figure>
+                            <img src="../img/Nosotros.png" alt="Masa madre" class="entrada-img">
+                            <figcaption class="sr-only">Nuestra masa madre</figcaption>
+                        </figure>
                         <div class="entrada-body">
-                            <h3 id="entrada-1982" class="entrada-titulo">El Secreto en Cada Hogaza, nuestra Masa Madre Centenaria</h3>
-                            <p class="entrada-desc">Más que una receta, es un legado. Nuestra masa madre natural es el corazón de todo lo que hacemos. </p>
+                            <h3 id="entrada-masa" class="entrada-titulo">El secreto: nuestra masa madre</h3>
+                            <p class="entrada-desc">Más que una receta: un legado. Nuestra masa madre natural es el corazón de todo lo que horneamos.</p>
                         </div>
                     </article>
-                    <article class="nosotros-entrada" aria-labelledby="entrada-1982">
-                        <img src="../img/San_MIguel.png" alt="Panadero con pan - 1982" class="entrada-img">
+
+                    <article class="nosotros-entrada" aria-labelledby="entrada-tradicion">
+                        <figure>
+                            <img src="../img/San_MIguel.png" alt="Fachada Horno San Miguel" class="entrada-img">
+                            <figcaption class="sr-only">Fachada Horno San Miguel</figcaption>
+                        </figure>
                         <div class="entrada-body">
-                            <h3 id="entrada-1982" class="entrada-titulo">La Tradición que Nos Define</h3>
-                            <p class="entrada-desc">Más de 40 años horneando el pan de verdad en el corazón de la ciudad, con la misma pasion y compromiso como el primer dia en el que empezemos.</p>
+                            <h3 id="entrada-tradicion" class="entrada-titulo">La tradición que nos define</h3>
+                            <p class="entrada-desc">Más de 40 años horneando con la misma pasión y compromiso del primer día sin fallar ninguno.</p>
                         </div>
                     </article>
                 </div>
             </section>
 
+            <!-- Fotos del local + historia-->
+             <section class="historia">
+                <div class="contenedor historia-grid">
+                    <div class="historia-imagen">
+                        <img src="../img/Local/Fachada.png" alt="Fachada Horno San Miguel">
+                    </div>
+                    <div class="historia-contenido">
+                        <h2 class="historia-titulo">Nuestra Historia</h2>
+                        <p>Muchas cosas han cambiado desde que las puertas de Panadería San Miguel se abrieron por primera vez en 1982. En aquel año, con una promesa de autenticidad y el compromiso de honrar el arte de la panadería tradicional, dimos nuestros primeros pasos. Lo que empezó como un pequeño obrador impulsado por el deseo de ofrecer "pan de verdad", se ha convertido en un referente en el corazón de la ciudad.
+
+                            "Elaborado en nuestras manos con las cosas tradicionales, como es el horneado al horno. Empezamos así los pasos con el arte de los trigos y la bollería, para hacerlo con corazón."
+
+                            Desde el primer día, nuestra misión ha sido clara: fusionar la maestría manual con la sabiduría ancestral de los cereales, horneando cada pieza con una pasión inalterable.</p>
+                        </div>
+             </section>
             
-        </main>
+            <!-- Local desde dentro -->
+                <section class="local-dentro">
+                    <div class="contenedor local-dentro-grid">
+                        <div class="local-dentro-imagen">
+                            <img src="../img/Local/Dentro.png" alt="Interior Horno San Miguel 1">
+                        </div>
+                        <div class="local-dentro-imagen">
+                            <img src="../img/Local/Fachada.png" alt="Interior Horno San Miguel 2">
+                        </div>
+                        <div class="local-dentro-imagen">
+                            <img src="../img/Local/Fondo.png" alt="Interior Horno San Miguel 3">
+                        </div>
+                        <div class="local-dentro-imagen">
+                            <img src="../img/Local/Mostrador.png" alt="Interior Horno San Miguel 4">
+                        </div>
+                    </div>
+                </section>
+            </main>
+
         <!-- Footer -->
         <footer class="pie-sitio" role="contentinfo">
             <div class="contenedor pie-grid">

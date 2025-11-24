@@ -709,7 +709,6 @@ body{
 .producto-img img {
 	max-width: 100%;
 	max-height: 100%;
-	object-fit: contain;
 	border-radius: 8px;
 	background: #f6f2f0;
 }
@@ -734,7 +733,6 @@ body{
 	border-radius: 6px;
 	padding: 8px 16px;
 	font-weight: 600;
-	cursor: pointer;
 }
 
 /* Paginacion*/
@@ -815,4 +813,79 @@ body{
 	color:#7a6053;
 	line-height:1.45;
 	font-size:0.95rem;
+}
+
+/* Utilidades de accesibilidad */
+.sr-only{
+	width:1px;
+	height:1px;
+	padding:0;
+	margin:-1px;
+	/*Esto lo que hace es que todo lo que no entra se vuelve invisible, como estoy lo he sacado de un video pues te lo explico por si lo lees*/
+	overflow:hidden; 
+	/*No pasa a la siguiente linea, esto tambien es sacado de un video */
+	white-space:nowrap;
+	border:0;
+}
+
+/* Historia */
+.historia{
+	padding:56px 0;
+	background:(180deg, rgba(251,248,246,0.6), rgba(251,248,246,0.95));
+}
+.historia-grid{
+	display:flex;
+	gap:28px;
+	align-items:center;
+}
+.historia-imagen{
+	flex:0 0 440px;
+}
+.historia-imagen img{
+	width:100%;
+	height:auto;
+	border-radius:10px;
+	display:block;
+	box-shadow:0 8px 20px rgba(28,18,12,0.06);
+}
+.historia-contenido{
+	flex:1;
+	padding:8px 12px;
+	color:#5a2b1b;
+}
+.historia-titulo{
+	font-size:1.6rem;
+	color:#5a2b1b;
+	margin-bottom:8px;
+}
+
+/* Local desde dentro */
+.local-dentro{
+	padding:48px 0;
+	background:(180deg, #fffaf8, #fbf7f5);
+}
+.local-dentro .contenedor.local-dentro-grid{
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap:18px;
+	align-items:stretch;
+	max-width:1100px;
+	margin:0 auto;
+	padding:12px 20px;
+}
+.local-dentro-imagen{
+	border-radius:10px;
+	overflow:hidden;
+	background:#fff;
+	box-shadow: 0 10px 30px rgba(28,18,12,0.06);
+	border:1px solid rgba(0,0,0,0.04);
+	position:relative;
+}
+.local-dentro-imagen img{
+	width:100%;
+	height:220px;
+	object-fit:cover;
+	display:block;
+	transition: transform 0.45s ease, filter 0.35s ease;
+	filter: grayscale(18%) contrast(0.98) brightness(0.98);
 }
