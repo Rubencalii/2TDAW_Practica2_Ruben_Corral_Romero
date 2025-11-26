@@ -18,10 +18,16 @@
                         <span class="marca-subtitulo">Desde 1982</span>
                     </div>
                 </a>
-                <nav class="nav-principal" role="navigation" aria-label="Menu principal">
-                    <a href="Inicio.html" class="activo">Inicio</a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span class="sr-only">Abrir menú principal</span>
+                    <span></span>
+
+                </label>
+                <nav id="menu-principal" class="nav-principal" role="navigation" aria-label="Menu principal">
+                    <a href="Inicio.html">Inicio</a>
                     <a href="Productos.html">Productos</a>
-                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Nosotros.html" class="activo">Nosotros</a>
                     <a href="Contacto.html">Contacto</a>
                     <a href="FAQs.html">FAQs</a>
                 </nav>
@@ -67,7 +73,7 @@
                 </div>
             </section>
 
-            <!-- Fotos del local + historia-->
+            <!-- Fotos del local-->
              <section class="historia">
                 <div class="contenedor historia-grid">
                     <div class="historia-imagen">

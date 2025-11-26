@@ -18,9 +18,14 @@
                         <span class="marca-subtitulo">Desde 1982</span>
                     </div>
                 </a>
-                <nav class="nav-principal" role="navigation" aria-label="Menu principal">
-                    <a href="Inicio.html" class="activo">Inicio</a>
-                    <a href="Productos.html">Productos</a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span class="sr-only">Abrir menú principal</span>
+                    <span></span>
+                </label>
+                <nav id="menu-principal" class="nav-principal" role="navigation" aria-label="Menu principal">
+                    <a href="Inicio.html">Inicio</a>
+                    <a href="Productos.html" class="activo">Productos</a>
                     <a href="Nosotros.html">Nosotros</a>
                     <a href="Contacto.html">Contacto</a>
                     <a href="FAQs.html">FAQs</a>
@@ -31,7 +36,7 @@
         <main>
             <section class="catalogo-productos" aria-label="Catalogo de productos de panaderia">
                 <div class="catalogo-container">
-                    <!-- Barra lateral de filtros -->
+                    <!-- Barra de filtros -->
                     <aside class="catalogo-filtros">
                         <h2 class="filtros-titulo">Filtrar por</h2>
                         <div class="filtro-bloque">
@@ -60,7 +65,6 @@
                                 <li><input type="checkbox" id="hogaza"><label for="hogaza"> Hogaza</label></li>
                             </ul>
                         </div>
-                        <!-- Puedes anadir mas filtros aqui -->
                     </aside>
                     <!-- Catalogo de productos -->
                     <div class="catalogo-principal">
@@ -76,7 +80,7 @@
                             </div>
                         </div>
                         <div class="catalogo-grid">
-                            <!-- Tarjeta de producto ejemplo -->
+                            <!-- Tarjeta de producto -->
                             <div class="tarjeta-producto">
                                 <div class="producto-img"><img src="../img/productos/barra de pan.png" alt="Barra de pan"></div>
                                 <div class="producto-info">
@@ -150,7 +154,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Paginacion -->
+                        <!-- Paginas -->
                         <div class="catalogo-paginacion">
                             <button class="boton-paginacion">&lt;</button>
                             <button class="boton-paginacion activo">1</button>
