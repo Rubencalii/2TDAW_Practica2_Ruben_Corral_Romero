@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,54 @@
                         <span class="marca-subtitulo">Desde 1982</span>
                     </div>
                 </a>
-                <nav class="nav-principal" role="navigation" aria-label="Menú principal">
-                    <a href="Inicio.html" class="activo">Inicio</a>
+                <nav class="nav-principal" role="navigation" aria-label="Menu principal">
+                    <a href="Inicio.html">Inicio</a>
                     <a href="Productos.html">Productos</a>
                     <a href="Nosotros.html">Nosotros</a>
                     <a href="Contacto.html">Contacto</a>
-                    <a href="FAQs.html">FAQs</a>
+                    <a href="FAQs.html" class="activo" aria-current="page">FAQs</a>
                 </nav>
             </div>
         </header>
+        <!-- Preguntas Frecuentes -->
+        <main class="faqs-hero">
+            <div class="faqs-overlay" aria-hidden="true"></div>
+            <div class="contenedor faqs-contenido">
+                <header class="faqs-intro">
+                    <h1 class="faqs-titulo">¿Preguntas frecuentes?</h1>
+                    <p class="faqs-sub">Encuentra aqui respuestas rapidas sobre nuestros productos artesanales, pedidos y mas.</p>
+                </header>
+
+                <section class="faq-cartas" aria-label="Categorias de preguntas">
+                    <article class="faq-carta">
+                        <div class="faq-icon"><img src="../img/PreguntasFrecuentes/Cuenta_Perfil.png" alt="Cuenta y perfil"></div>
+                        <h3 class="faq-carta-titulo">CUENTA Y PERFIL</h3>
+                        <p class="faq-carta-sub">¿Como edito mis datos personales?</p>
+                    </article>
+
+                    <article class="faq-carta">
+                        <div class="faq-icon"><img src="../img/PreguntasFrecuentes/Envios.png" alt="Envios y pedidos"></div>
+                        <h3 class="faq-carta-titulo">ENVIOS Y PEDIDOS</h3>
+                        <p class="faq-carta-sub">¿Cual es el estado de mi pedido?</p>
+                    </article>
+
+                    <article class="faq-carta">
+                        <div class="faq-icon"><img src="../img/PreguntasFrecuentes/Facturacion.png" alt="Pagos y facturacion"></div>
+                        <h3 class="faq-carta-titulo">PAGOS Y FACTURACION</h3>
+                        <p class="faq-carta-sub">¿Puedo cambiar el metodo de pago?</p>
+                    </article>
+                </section>
+
+                <div class="faq-buscar-wrap">
+                    <form class="faq-buscar" role="search" aria-label="Buscar en preguntas">
+                        <input type="search" placeholder="Escribe tu pregunta aqui..." aria-label="Buscar" />
+                        <button type="submit" aria-label="Buscar pregunta"><img src="../img/LupaBlanca.png" alt="Icono de busqueda"></button>
+                    </form>
+                    <a class="faq-cta" href="#">VER MAS CONSULTAS</a>
+                </div>
+            </div>
+        </main>
+
         <!-- Footer -->
         <footer class="pie-sitio" role="contentinfo">
             <div class="contenedor pie-grid">
@@ -38,11 +77,11 @@
                             <div class="small">Desde 1982</div>
                         </div>
                     </div>
-                    <p class="desc-pie">Pan de masa madre y bollería artesanal. Tradición y calidad en cada hogaza.</p>
+                    <p class="desc-pie">Pan de masa madre y bolleria artesanal. Tradicion y calidad en cada hogaza.</p>
                 </div>
 
                 <div class="enlaces-pie">
-                    <h4>Enlaces rápidos</h4>
+                    <h4>Enlaces rapidos</h4>
                     <ul>
                         <li><a href="Productos.html">Nuestros productos</a></li>
                         <li><a href="Nosotros.html">Sobre nosotros</a></li>
@@ -52,10 +91,10 @@
                 </div>
 
                 <div class="contacto-pie">
-                    <h4>Información de contacto</h4>
+                    <h4>Informacion de contacto</h4>
                     <ul class="lista-contacto">
-                        <li><img src="../img/ubicacion.png" alt="Ubicación" class="icono-mapa" aria-hidden="true"> Pl. Agua 8, 18290</li>
-                        <li><img src="../img/telefono.png" alt="Teléfono" class="icono-telefono" aria-hidden="true"> 91 111 11 11</li>
+                        <li><img src="../img/ubicacion.png" alt="Ubicacion" class="icono-mapa" aria-hidden="true"> Pl. Agua 8, 18290</li>
+                        <li><img src="../img/telefono.png" alt="Telefono" class="icono-telefono" aria-hidden="true"> 91 111 11 11</li>
                         <li><img src="../img/reloj-blanco.png" alt="Horario" class="icono-reloj" aria-hidden="true"> L-V: 7:00-14:30 / 17:30-20:00<br>S: 7:30-14:30</li>
                     </ul>
                 </div>
